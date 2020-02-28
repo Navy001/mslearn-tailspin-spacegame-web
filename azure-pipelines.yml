@@ -50,13 +50,14 @@ steps:
     projects: '**/*.csproj'
 
 - task: DotNetCoreCLI@2
-  displayName: 'Publish the project - Release (avec build plutot que No-build)'
+  displayName: 'Publish the project - Release (avec testpath)'
   inputs:
     command: 'publish'
     projects: '**/*.csproj'
     publishWebProjects: false
-    arguments: '--build --configuration Release --output $(Build.ArtifactStagingDirectory)/Release'
+    arguments: '--no-build --configuration Release --output testpath/Release'
     zipAfterPublish: true
+    modifyOutputPath: true
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
