@@ -55,7 +55,7 @@ steps:
     command: 'publish'
     projects: '**/*.csproj'
     publishWebProjects: false
-    arguments: '-o testpath'
+    arguments: '-o $(Build.ArtifactStagingDirectory)/Release'
     zipAfterPublish: true
     modifyOutputPath: true
 
