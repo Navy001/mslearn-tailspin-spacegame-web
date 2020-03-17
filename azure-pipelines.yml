@@ -83,7 +83,7 @@ steps:
   displayName: 'Create code coverage report'
 
 - task: SonarCloudAnalyze@1
-  displayName: 'Run SonarCloud code analysis ** COPIE TEL QUEL **'
+  displayName: 'Run SonarCloud code analysis ** COPIE TEL QUEL -2**'
 
 - task: SonarCloudPublish@1
   displayName: 'Publish SonarCloud quality gate results'
