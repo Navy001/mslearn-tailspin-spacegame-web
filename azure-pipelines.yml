@@ -1,4 +1,3 @@
-
 trigger:
 - '*'
 
@@ -45,7 +44,7 @@ steps:
     projects: '**/*.csproj'
 
 - task: SonarCloudPrepare@1
-  displayName: 'Prepare SonarCloud analysis Texte comme original $(SonarProjectKey)'
+  displayName: 'Prepare SonarCloud analysis'
   inputs:
     SonarCloud: 'SonarCloud connection 1'
     organization: '$(SonarOrganization)'
@@ -84,7 +83,7 @@ steps:
   displayName: 'Create code coverage report'
 
 - task: SonarCloudAnalyze@1
-  displayName: 'Run SonarCloud code analysis PROJEC-2: $(SonarProjectName)'
+  displayName: 'Run SonarCloud code analysis ** COPIE TEL QUEL **'
 
 - task: SonarCloudPublish@1
   displayName: 'Publish SonarCloud quality gate results'
