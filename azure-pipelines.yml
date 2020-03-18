@@ -83,7 +83,7 @@ steps:
   displayName: 'Create code coverage report'
 
 - task: SonarCloudAnalyze@1
-  displayName: 'Run SonarCloud code analysis ** Refresh keys-2 **'
+  displayName: 'Run SonarCloud code analysis ** Refresh delete in SonarCloud **'
 
 - task: SonarCloudPublish@1
   displayName: 'Publish SonarCloud quality gate results'
